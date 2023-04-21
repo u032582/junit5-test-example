@@ -10,9 +10,13 @@ public class Calculator {
 		return a - b;
 	}
 
+	public int multiply(int a, int b) {
+		return a * b;
+	}
+
 	public int divide(int a, int b) {
 		if (b == 0) {
-			throw new ArithmeticException("division by zero");
+			throw new IllegalArgumentException("Divisor cannot be zero.");
 		}
 		return a / b;
 	}
